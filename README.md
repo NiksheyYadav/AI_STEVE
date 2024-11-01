@@ -1,4 +1,8 @@
 ﻿# AI Assistent STEVE
+ 
+We recently created an innovative voice-guided robot from scratch for the Synergy techfest held in Gurugram! 🎉 This project was coded primarily in JavaScript, with every aspect — from designing an interactive GUI to incorporating advanced voice processing — built by hand. 🖥️🔊 Our goal was to create a seamless user experience and showcase cutting-edge voice-guided technology.
+
+Proud of this accomplishment and excited to see how far we can take this concept in the future!
 
 A simple Express.js server that proxies requests to the [Wolfram Alpha API](https://www.wolframalpha.com/), enabling users to send a question and receive a response directly from Wolfram Alpha.
 
