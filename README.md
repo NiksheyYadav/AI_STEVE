@@ -1,4 +1,4 @@
-﻿## AI_Assistent
+﻿### AI_Assistent
 # Express Wolfram Alpha Proxy API
 
 A simple Express.js server that proxies requests to the [Wolfram Alpha API](https://www.wolframalpha.com/), enabling users to send a question and receive a response directly from Wolfram Alpha.
