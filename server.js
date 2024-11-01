@@ -4,8 +4,7 @@ import fetch from 'node-fetch'; // Use 'import' instead of 'require'
 const app = express();
 const port = 3000;
 
-const WOLFRAM_API_KEY = 'GRAR32-YKAKVW9JYE'; // Replace with your Wolfram Alpha API key
-// const WOLFRAM_API_KEY = 'GRAR32-KYXR62YVQA'; // Replace with your Wolfram Alpha API key
+const WOLFRAM_API_KEY = '<api>'; // Replace this <api> with your Wolfram Alpha API key
 
 app.use(express.static('public')); // Serve your frontend files from a 'public' folder
 
