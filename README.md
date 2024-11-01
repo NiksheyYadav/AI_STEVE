@@ -20,8 +20,8 @@ A simple Express.js server that proxies requests to the [Wolfram Alpha API](http
 1. **Clone the repository:**
 
    ```
-   git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   cd YOUR_REPO_NAME
+   git clone https://github.com/WIZARD3022/AI_STEVE.git
+   cd AI_STEVE
    ```
 
 2. **Install dependencies:**
@@ -44,7 +44,7 @@ Replace the placeholder API key in index.js or create a .env file and store your
 
 1. Start the server:
    ```
-   node index.js
+   node server.js
    ```
 
 2.Access the API:
@@ -52,9 +52,8 @@ Replace the placeholder API key in index.js or create a .env file and store your
 Open your browser or a tool like Postman and go to:
 
 ```
-http://localhost:3000/api?question=YOUR_QUESTION
+http://localhost:3000
 ```
-Replace `YOUR_QUESTION` with a query, like What is the capital of France?.
 
 3.Frontend Files:
 
@@ -64,11 +63,11 @@ Any static frontend files can be placed in the public folder. These will be serv
 Here’s a breakdown of the main files and folders:
 
 ```
-YOUR_REPO_NAME/
+AI_STEVE/
 │
 ├── public/                   # Static frontend files (HTML, CSS, JS)
 │
-├── index.js                  # Main server file with Express setup
+├── server.js                  # Main server file with Express setup
 │
 ├── .gitignore                # Files/folders to ignore in version control
 │
