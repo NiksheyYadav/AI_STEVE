@@ -1,5 +1,7 @@
+console.log('Welcome')
+
 if (!('webkitSpeechRecognition' in window)) {
-    alert("Speech recognition is not supported in this browser.");
+    alert("Speech recognition isn't supported in this browser.");
 } else {
     const videoElement = document.getElementById('webcam');
     let stream;
@@ -25,8 +27,8 @@ if (!('webkitSpeechRecognition' in window)) {
     function displayAnswer(answer) {
         document.getElementById('answer').innerHTML = `
             <div style="display:relative">
-                <img style="height:500px" src="./design...gif" alt="design">
-                <img style="height:250px; position:absolute; bottom:200px;" src="./bot.gif" alt="bot">
+                <img style="height:501px" src="./design...gif" alt="design">
+                <img style="height:251px; position:absolute; bottom:200px;" src="./bot.gif" alt="bot">
             </div>
             <div style="width:450px; color:#53f553">${answer}</div>
             `;
@@ -79,21 +81,21 @@ if (!('webkitSpeechRecognition' in window)) {
         }
         // Basic question handling
         if (question.includes("your name") || question.includes("who are you")) {
-            answer = "My name is Steve!";
+            answer = "My name is Steve!,";
             changer(answer);
         } else if (question.includes("steve")) {
             question = question.replace(/(hey[,.]?\s*)?steve[,.]?/i, "").trim();
             if (question.includes("how are you")) {
                 answer = "I'm just a program, but I'm doing great!";
                 changer(answer);
-            } else if (question.includes("can you think or feel")) {
-                answer = "I can't think or feel emotions like humans do.";
+            } else if (question.includes("Can you think or feel")) {
+                answer = "I can't think or feel emotions like humans do, but may be at some point in near future as AI advances further.";
                 changer(answer);
             } else if (question.includes("what are you made of")) {
                 answer = "I'm made of software and code with a bit of compatible hardware!";
                 changer(answer);
             } else if (question.includes("who created you") || question.includes("who made you")) {
-                answer = "I was created by a team of Btech computer Science students Vinit, Mahesh, Deepesh and Vansh.";
+                answer = "I was bought to life by a team of Computer Science students, Vinit, Mahesh, Deepesh and Vansh.";
                 changer(answer);
             } else if (question.includes("can you solve math problems")) {
                 answer = "Yes, I can help you with math problems!";
@@ -398,7 +400,12 @@ if (!('webkitSpeechRecognition' in window)) {
             } else if ((question.includes("**")) || (question.includes("chute")) || (question.includes("bosada")) || (question.includes("Randi")) || (question.includes("chuda")) || (question.includes("Gand")) || (question.includes("Loda")) || (question.includes("chod")) || (question.includes("Badwa")) || (question.includes("Chute"))) {
                 answer = "Don't abuse!Be in you limit.";
                 changer(answer);
-            } else {
+            } else if (question.includes("When is your birthday?")){
+                answer = "i was born in October 2024";
+            } else if (question.includes("What famous personalities have visited SGT?")){
+                answer = "Celebrities like Akshay kumar, Hritik Roshan, and many more have visited sgt.";
+            }
+            else {
                 const url = `/api?question=${encodeURIComponent(question)}`;
                 fetch(url)
                     .then(response => response.text())
